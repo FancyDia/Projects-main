@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+
+</head>
+
+<body>
+
+    <!--The navigation bar-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Bose</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+    </div>
+
+    </div>
+
+    </nav>
+
+    <div>
+      <img class="img-fluid" src="project-week-3-pics/Bose_logo_header.png" alt="Bose logo header">
+    </div>
+
+    <!--This is the start of my table-->
+
+  <table class="table pt-1 mt-2">
+
+    <thead>
+
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Design</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Price</th>
+    </tr>
+
+    </thead>
+
+    <tbody>
+
+    <tr>
+      <td>Bose QuietComfort Ultra Headphones</td>
+      <td>Over the ear headphones</td>
+      <td>4.5 stars</td>
+      <td>$429.00</td>
+    </tr>
+    <tr>
+      <td>Bose Ultra Open Earbuds</td>
+      <td>Open ear/clip on earbuds</td>
+      <td>4.3 stars</td>
+      <td>$299.00</td>
+    </tr>
+    <tr>
+      <td>Bose SoundLink Flex</td>
+      <td>Portable speaker</td>
+      <td>4.6 stars</td>
+      <td>$159.00</td>
+    </tr>
+
+    </tbody>
+
+  </table>
+
+  <!--Contact form-->
+  <div class="container">
+    
+    <form class="row g-3 mb-5 ms-3 me-3 p-5 "></form>
+
+      <div class="col-md-6 pb-3">
+        <label for="firstname" class="form-label">First Name</label>
+        <input type="text" class="form-control" aria-label="First name" id="firstname">
+      </div>
+
+      <div class="col-md-6 pb-3">
+        <label for="lastname" class="form-label">Last Name</label>
+        <input type="text" class="form-control" aria-label="Last name" id="lastname">
+      </div>
+
+      <div class="col-12 pb-3">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+    </form>
+
+  </div>
+
+  <!--footer-->
+
+  <footer class="pt-5 pb-5">
+    <div class="text-center p-2">
+      <h5>Bose Beginners Guide 2025</h5>
+    </div>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

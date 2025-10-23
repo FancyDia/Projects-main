@@ -1,0 +1,199 @@
+<!--The website must include the following-->
+<!--At least 2 pages-->
+<!--A Bootstrap navbar, table, and form-->
+<!--A Bootstrap grid used throughout to format elements-->
+<!--Elements should stack vertically when the window is small-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bose Audio</title>
+    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+
+</head>
+
+<body>
+
+    <!--The navigation bar-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Bose</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+        </li>
+      </ul>
+
+    </div>
+
+    </div>
+
+    </nav>
+
+    <!--My hero-->
+    <div>
+      <!--Since i would like the img to move if the user resizes it
+      I define it as a class and set the img as fluid-->
+      <img class="img-fluid" src="project-week-3-pics/Bose_logo_header.png" alt="Bose logo header">
+    </div>
+
+    <!--My title/header-->
+    <div>
+      <!--Since I want to center the text and make it bigger
+      I have to define it as a class to configure the text-->
+
+      <h1 class="text-center p-1 mt-2">All About Bose</h1>
+      <p class="text-center p-1 fs-5">Want to know a few of Bose products from different price ranges? 
+      Well this site will help you see some of the bestsellers for different occasions.
+      </p>
+
+    </div>
+
+    <!--My picture card-->
+    <!--Since I would like to have it in a grid format, this bootstrap code
+    allows me to have it more uniform-->
+    <div class="container">
+
+    <!--Since I want to add some spacing between my cards. I add a padding to the top portion
+    to have space between the words from my header. Margin and a gutter for between the columns
+    Since I also want the cards to stack vertically when small and spread out when the user increases
+    the size of the webpage, I am using row-cols-1 by default and larger at 3 to space out-->
+    <div class="row row-cols-1 row-cols-lg-3 g-4 m-3 pt-5">
+
+    <div class="col">
+      <!--i want to set the height of the card to 100 and add a little flair by adding a shadow-->
+      <div class="card h-100 shadow-lg">
+
+        <img src="project-week-3-pics/UOEarbuds.jpg" class="card-img-top" alt="Bose Quietcomfort Ultra Headphones">
+
+        <div class="card-body">
+         <h5 class="card-title">Headphones/Earbuds</h5>
+         <p class="card-text">For your average consumers, with top of the line noise cancellation and high-definition audio quality.
+         Bose has one of the best headphones and earbuds options on the market, which can be abang for your buck.
+         </p>
+        </div>
+     </div>
+
+    </div>
+
+    <div class="col">
+      
+      <div class="card h-100 shadow-lg">
+
+        <img src="project-week-3-pics/Soundbar.jpg" class="card-img-top" alt="Bose Soundbar">
+    
+        <div class="card-body">
+          <h5 class="card-title">Speakers/Soundbars</h5>
+          <p class="card-text">If headphones aren't your thing, Bose also has speakers and home theathers to help you out.
+           If you want to hear high-quality audio on the go or whether you want to stay at home and watch movies in dolby atmos.
+           bose has the products for you.
+          </p>
+       </div>
+
+      </div>
+
+    </div>
+    <div class="col">
+      
+      <div class="card h-100 shadow-lg">
+
+        <img src="project-week-3-pics/AHA30.jpg" class="card-img-top" alt="Aviation headphones A30">
+    
+        <div class="card-body">
+          <h5 class="card-title">Aviation Headphones</h5>
+          <p class="card-text">Are you or a loved one aviation certified and just wish Bose made aviation headphones?
+           Good news is that Bose has now made aviation approve headphones.
+            More of what you love, now everywhere you go.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <!--Picture Div-->
+    
+    <div id="carouselExampleCaptions" class="carousel slide">
+
+      <div class="carousel-inner m-3 pt-5">
+
+      <div class="carousel-item active">
+        <!--To be able to center the carousel to the center of the screen, using the command display in class makes it
+        so it is rounded to the center inside a card box and resizes automatically-->
+      <img src="project-week-3-pics/QCUHeadphones.png" class="rounded mx-auto d-block" alt="QuietComfort Ultra Headphones">
+      <div class="carousel-caption d-none d-md-block">
+        <p style="color: rgb(255, 0, 0)">The Quiet Comfort Ultra Headphones in the classic black color. With top of the line Noise cancelling
+           and unrivaled sound quality in a portable package.
+        </p>
+      </div>
+      </div>
+
+      <div class="carousel-item">
+      <img src="project-week-3-pics/SLFlex.png" class="rounded mx-auto d-block" alt="Soundlink Flex Speaker">
+      <div class="carousel-caption">
+        <p style="color: rgb(255, 0, 0)">Soundlink Flex Speaker in beautiful pink for accenting the color of your home. Being both waterproof and drop-proof, 
+          bring it with you wherver you are around the house.
+        </p>
+      </div>
+      </div>
+
+      <div class="carousel-item">
+      <img src="project-week-3-pics/S1PA.jpg" class="rounded mx-auto d-block" alt="Bose S1 PA system">
+      <div class="carousel-caption">
+        <p style="color: rgb(255, 0, 0)">Versatile and powerful outdoor speaker with a 3-channel mixer. Complatible with microphones for those outdoor 
+          karoeke parties for wherever you are.
+        </p>
+      </div>
+      </div>
+
+      <div class="carousel-item">
+      <img src="project-week-3-pics/UOERed.jpg" class="rounded mx-auto d-block" alt="Ultra Open Earbuds in color red">
+      <div class="carousel-caption" >
+        <p style="color: rgb(255, 0, 0)">Ultra Open Earbuds in our new beautiful red color to show off your style. If you never liked putting 
+          earbuds inside your ear, these clip ons are perfect for you.
+        </p>
+      </div>
+      </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    <!--footer-->
+
+    <footer class="pt-5 pb-5">
+      <div class="text-center p-2">
+        <h5>Bose Beginners Guide 2025</h5>
+      </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
